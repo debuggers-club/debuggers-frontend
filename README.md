@@ -2,13 +2,15 @@
 
 - Fork the repository
 - Clone from the forked repo from your profile
-- > `cd debuggers-frontend`
-- > `npm install`
+- > cd debuggers-frontend
+- > npm install
 - To run the frontend app
-  - > `npm run start`
-  - > `npm run dev`
+  - > npm run start
+  - > npm run dev
 - To run backend + frontend
-  - > `npm run app`
+  - > npm run app
+- The Front end will be running on http://localhost:3000
+- The Backend will be running on http://api.localhost:3000
 
 ## TODO
 
