@@ -14,17 +14,16 @@ app.prepare().then(() => {
   // });
 
   mainServer.use((req, res, next) => {
-    const hostName = req.hostname;
-    const subdomain = hostName.split(".")[0];
-    console.log(subdomain);
-    if (subdomain === "api") {
+    const path = req.path;
+    if (path === "/api") {
       next();
     } else {
       return handle(req, res);
     }
   });
 
-  mainServer.use("/", backend);
+  mainServer.use("/api", backend);
+  mainServer.use("/", handle);
 
   mainServer.listen(port, (err) => {
     if (err) throw err;

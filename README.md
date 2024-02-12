@@ -10,7 +10,7 @@
 - To run backend + frontend
   - > npm run app
 - The Front end will be running on http://localhost:3000
-- The Backend will be running on http://api.localhost:3000
+- The Backend will be running on http://localhost:3000/api
 
 ## TODO
 
